@@ -1,0 +1,5 @@
+﻿Build started...
+1>------ Build started: Project: QuanLiBanCoffe, Configuration: Debug Any CPU ------
+1>D:\CODE\QuanLiBanCoffe\QuanLiBanCoffe\Program.cs(19,33,19,38): error CS0246: The type or namespace name 'Form1' could not be found (are you missing a using directive or an assembly reference?)
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
+========== Build started at 1:16 PM and took 00.422 seconds ==========

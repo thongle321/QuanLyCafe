@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED5F04A9-4FE9-4103-9B1F-518818218FCF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLiBanCoffe</RootNamespace>
+    <AssemblyName>QuanLiBanCoffe</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>C:\Users\Moderator\Downloads\bunifu.ui.winforms.4.1.1\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin2Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin2Framework.1.0.0\lib\net472\MaterialSkin2Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\HienThiDonViNguyenLieuBLL.cs" />
+    <Compile Include="BLL\HienThiKhachHangBLL.cs" />
+    <Compile Include="BLL\HienThiLoaiNguyenLieuBLL.cs" />
+    <Compile Include="BLL\HienThiLoaiSanPhamBLL.cs" />
+    <Compile Include="BLL\HienThiMaKHBLL.cs" />
+    <Compile Include="BLL\HienThiMaSanPhamBLL.cs" />
+    <Compile Include="BLL\HienThiNguyenLieuBLL.cs" />
+    <Compile Include="BLL\HienThiNguyenLieuSanPhamBLL.cs" />
+    <Compile Include="BLL\HienThiNhanVienBLL.cs" />
+    <Compile Include="BLL\HienThiSanPhamBLL.cs" />
+    <Compile Include="BLL\HienThiSanPhamTheoLoaiBLL.cs" />
+    <Compile Include="BLL\HienThiTenTheoMaKHBLL.cs" />
+    <Compile Include="BLL\HienThiThongTinTheoMaSPBLL.cs" />
+    <Compile Include="BLL\SuaNguyenLieuBLL.cs" />
+    <Compile Include="BLL\SuaNhanVienBLL.cs" />
+    <Compile Include="BLL\SuaSanPhamBLL.cs" />
+    <Compile Include="BLL\TaiKhoanBLL.cs" />
+    <Compile Include="BLL\ThemHoaDonChiTietHoaDonBLL.cs" />
+    <Compile Include="BLL\ThemKhachHangBLL.cs" />
+    <Compile Include="BLL\ThemNguyenLieuBLL.cs" />
+    <Compile Include="BLL\ThemNguyenLieuSanPhamBLL.cs" />
+    <Compile Include="BLL\ThemNhanVienBLL.cs" />
+    <Compile Include="BLL\ThemSanPhamBLL.cs" />
+    <Compile Include="BLL\ThongKeTheoNamBLL.cs" />
+    <Compile Include="BLL\ThongKeTheoNgayBLL.cs" />
+    <Compile Include="BLL\ThongKeTheoThangBLL.cs" />
+    <Compile Include="BLL\TimKiemKhachHangBLL.cs" />
+    <Compile Include="BLL\TimKiemNguyenLieuBLL.cs" />
+    <Compile Include="BLL\TimKiemNhanVienBLL.cs" />
+    <Compile Include="BLL\TimKiemSanPhamBLL.cs" />
+    <Compile Include="BLL\XoaNguyenLieuBLL.cs" />
+    <Compile Include="BLL\XoaNguyenLieuSanPhamBLL.cs" />
+    <Compile Include="BLL\XoaNhanVienBLL.cs" />
+    <Compile Include="BLL\XoaSanPhamBLL.cs" />
+    <Compile Include="DAL\KetNoiDatabase.cs" />
+    <Compile Include="DAL\TruyCapHienThiDonViNguyenLieu.cs" />
+    <Compile Include="DAL\TruyCapHienThiKhachHang.cs" />
+    <Compile Include="DAL\TruyCapHienThiLoaiNguyenLieu.cs" />
+    <Compile Include="DAL\TruyCapHienThiLoaiSanPham.cs" />
+    <Compile Include="DAL\TruyCapHienThiMaKH.cs" />
+    <Compile Include="DAL\TruyCapHienThiMaSanPham.cs" />
+    <Compile Include="DAL\TruyCapHienThiNguyenLieu.cs" />
+    <Compile Include="DAL\TruyCapHienThiNguyenLieuSanPham.cs" />
+    <Compile Include="DAL\TruyCapHienThiNhanVien.cs" />
+    <Compile Include="DAL\TruyCapHienThiSanPham.cs" />
+    <Compile Include="DAL\TruyCapHienThiSanPhamTheoLoai.cs" />
+    <Compile Include="DAL\TruyCapHienThiTenTheoMaKH.cs" />
+    <Compile Include="DAL\TruyCapHienThiThongTinTheoMaSP.cs" />
+    <Compile Include="DAL\TruyCapNguyenLieuSanPham.cs" />
+    <Compile Include="DAL\TruyCapSuaNguyenLieu.cs" />
+    <Compile Include="DAL\TruyCapSuaNhanVien.cs" />
+    <Compile Include="DAL\TruyCapSuaSanPham.cs" />
+    <Compile Include="DAL\TruyCapThemHoaDonChiTietHoaDon.cs" />
+    <Compile Include="DAL\TruyCapThemKhachHang.cs" />
+    <Compile Include="DAL\TruyCapThemNguyenLieu.cs" />
+    <Compile Include="DAL\TruyCapThemNguyenLieuSanPham.cs" />
+    <Compile Include="DAL\TruyCapThemNhanVien.cs" />
+    <Compile Include="DAL\TruyCapTaiKhoan.cs" />
+    <Compile Include="DAL\TruyCapThemSanPham.cs" />
+    <Compile Include="DAL\TruyCapThongKeTheoNam.cs" />
+    <Compile Include="DAL\TruyCapThongKeTheoNgay.cs" />
+    <Compile Include="DAL\TruyCapThongKeTheoThang.cs" />
+    <Compile Include="DAL\TruyCapTimKiemKhachHang.cs" />
+    <Compile Include="DAL\TruyCapTimKiemNguyenLieu.cs" />
+    <Compile Include="DAL\TruyCapTimKiemNhanVien.cs" />
+    <Compile Include="DAL\TruyCapTimKiemSanPham.cs" />
+    <Compile Include="DAL\TruyCapXoaNguyenLieu.cs" />
+    <Compile Include="DAL\TruyCapXoaNguyenLieuSanPham.cs" />
+    <Compile Include="DAL\TruyCapXoaNhanVien.cs" />
+    <Compile Include="DAL\TruyCapXoaSanPham.cs" />
+    <Compile Include="DTO\ChiTietHoaDonDTO.cs" />
+    <Compile Include="DTO\HoaDonDTO.cs" />
+    <Compile Include="DTO\KhachHangDTO.cs" />
+    <Compile Include="DTO\KhoSanPhamDTO.cs" />
+    <Compile Include="DTO\NguyenLieuDTO.cs" />
+    <Compile Include="DTO\NhanVienDTO.cs" />
+    <Compile Include="DTO\SanPhamDTO.cs" />
+    <Compile Include="GUI\QuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyKhachHang.Designer.cs">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SuaSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaSanPham.Designer.cs">
+      <DependentUpon>SuaSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ThemSanPham.Designer.cs">
+      <DependentUpon>ThemSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChiTietSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChiTietSanPham.Designer.cs">
+      <DependentUpon>ChiTietSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\TaiKhoanDTO.cs" />
+    <Compile Include="GUI\GiaoDienBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GiaoDienBanHang.Designer.cs">
+      <DependentUpon>GiaoDienBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GiaoDienNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GiaoDienNhanVien.Designer.cs">
+      <DependentUpon>GiaoDienNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GiaoDienQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GiaoDienQL.Designer.cs">
+      <DependentUpon>GiaoDienQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyKho_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyKho_Sua.Designer.cs">
+      <DependentUpon>QuanLyKho_Sua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyKho_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyKho_Them.Designer.cs">
+      <DependentUpon>QuanLyKho_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\SanPham.Designer.cs">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI\QuanLyNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyNhanVien.Designer.cs">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\KhoSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\KhoSanPham.Designer.cs">
+      <DependentUpon>KhoSanPham.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\QuanLyKhachHang.resx">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SuaSanPham.resx">
+      <DependentUpon>SuaSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ThemSanPham.resx">
+      <DependentUpon>ThemSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChiTietSanPham.resx">
+      <DependentUpon>ChiTietSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GiaoDienBanHang.resx">
+      <DependentUpon>GiaoDienBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GiaoDienNhanVien.resx">
+      <DependentUpon>GiaoDienNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GiaoDienQL.resx">
+      <DependentUpon>GiaoDienQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyKho_Sua.resx">
+      <DependentUpon>QuanLyKho_Sua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyKho_Them.resx">
+      <DependentUpon>QuanLyKho_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SanPham.resx">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="GUI\QuanLyNhanVien.resx">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KhoSanPham.resx">
+      <DependentUpon>KhoSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\QuanLiBanCoffe.BLL.HienThiLoaiNguyenLieuBLL.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\latte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\static.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buying-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\review.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\review1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\static1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teamwork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teamwork1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\private.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-key-5803.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-3297.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
